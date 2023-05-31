@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.spectrumwealth.viewmodel.WelcomeActivityViewModel">
+        </variable>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:background="@drawable/s_logo"></ImageView>
+    
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome To S Fin"
+        android:textSize="@dimen/_19sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/img_logo"></TextView>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_13sdp"
+        android:background="@drawable/rounded_blue_button"></Button>
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:text="Don't have an account? \n Sign up"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12sdp"
+        android:background="@drawable/rounded_blue_button"></Button>
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Don't have an account? \n Sign up"
+        app:layout_constraintTop_toBottomOf="@id/btn_signup"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintLeft_toLeftOf="parent"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

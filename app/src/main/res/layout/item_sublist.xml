@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!-- XML implementation of Card Layout -->
+<androidx.cardview.widget.CardView
+    android:id="@+id/view_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_75sdp"
+    android:layout_height="@dimen/_85sdp"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:id="@+id/llcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_service"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_63sdp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+
+            android:focusable="false"
+
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:id="@+id/tv_prodname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service name"
+            android:textColor="#89867f"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:textSize="@dimen/_9sdp" />
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:visibility="invisible"
+            android:text="Category"></TextView>
+        <TextView
+            android:id="@+id/tv_subcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:visibility="invisible"
+            android:text="Service type"></TextView>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

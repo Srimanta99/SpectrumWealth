@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rr_card"
+    android:layout_height="@dimen/_40sdp">
+
+    <TextView
+        android:id="@+id/tv_catname"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/_7sdp"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"></TextView>
+
+    <CheckBox
+        android:id="@+id/chk_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_alignParentRight="true"></CheckBox>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"></View>
+
+</RelativeLayout>
